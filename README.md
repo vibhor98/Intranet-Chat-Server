@@ -22,4 +22,4 @@ Just like this client, other clients can also connect in the same way. Once mult
 
 Currently, the code doesn't notify the users whether some user is already typing a message. So,  bit of patience and discipline is required from each user, to maintain the output clean.
 
-To add such a functionality, a function like found_terminator() of ChatSession class can be used to detect keystrokes from a session(i.e, a user). We shall soon add this functionality.
+To add such a functionality, a function like `found_terminator()` of `ChatSession` class can be used to detect keystrokes from a session(i.e, a user). We shall soon add this functionality.

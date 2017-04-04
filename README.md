@@ -5,7 +5,8 @@ We use `telnet` as a client interface to connect to the server. `telnet` comes i
 
 To connect to the chat server, type `telnet <server-ip> <port num>` on the client. As mentioned before, the port number is set by default to 5005. A suucessful connection would yield something like the following on the client:
 
-`MacBookPro:~ binaryBoy$ telnet 172.22.24.23 5005
+`
+MacBookPro:~ binaryBoy$ telnet 172.22.24.23 5005
 Trying 172.22.24.23...
 Connected to 172.22.24.23.
 Escape character is '^]'.
@@ -14,5 +15,5 @@ Type login <name> to enter the chat room.
 Type say <message> to send your message.
 Type "who" to see the users in your chat room.
 Type "look" to see the users logged into the entire chat server.
-Finally, use "logout" to exit from the server.`
-
+Finally, use "logout" to exit from the server.
+`

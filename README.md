@@ -1,5 +1,5 @@
 # Intranet-Chat-Server
-This is a server-side script to handle intranet chatting. We've used `asyncore` and `asynchat` modules from Python's standard library to handle recieving and broadcasting text in the backend. Simply execute the script by typing `python chat_server.py` to start the server. 
+This is a server-side script to handle intranet chatting. This can be handy when your Internet connection goes down / or is slow, and you need to communicate to someone in your network. We've used `asyncore` and `asynchat` modules from Python's standard library to handle recieving and broadcasting text in the backend. Simply execute the script by typing `python chat_server.py` to start the server. 
 
 The port for server connection has been set to 5005. You can set it to anything, but setting the number above 1023 is preferred. Once the server starts running, clients can connect to it by using the ip address of the machine running it.
 

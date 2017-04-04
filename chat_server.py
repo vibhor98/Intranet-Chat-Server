@@ -3,7 +3,7 @@ from asynchat import async_chat
 import socket, asyncore
 
 PORT = 5005
-NAME = "TestChat"
+NAME = "LNMChat"
 
 class EndSession(Exception): pass
 
@@ -11,7 +11,7 @@ class CommandHandler:
     '''class to handle commands, apart from just message text'''
 
     def unknown(self, session, cmd):
-        session.push('Unknown command: %s' % cmd)
+        session.push('Unknown command: %s\r\n' % cmd)
 
     def handle(self, session, line):
         if not line.strip():
@@ -19,7 +19,7 @@ class CommandHandler:
         parts = line.split(' ', 1)
         cmd = parts[0]
         try:
-            line = parts[1].strip()
+            line = parts[1].strip() + "\n"
         except IndexError: line=''
         meth = getattr(self, 'do_'+cmd, None)
         try:
@@ -48,6 +48,11 @@ class LoginRoom(Room):
     def add(self, session):
         Room.add(self, session)
         self.broadcast('Welcome to %s!\r\n' % self.server.name)
+        self.broadcast('Type login <name> to enter the chat room.\r\n')
+        self.broadcast('Type say <message> to send your message.\r\n')
+        self.broadcast('Type "who" to see the users in your chat room.\r\n')
+        self.broadcast('Type "look" to see the users logged into the entire chat server.\r\n')
+        self.broadcast('Finally, use "logout" to exit from the server.\n\r\n')
 
     def unknown(self, session, cmd):
         #All unknown commands except login/logout. Prompts:
@@ -80,11 +85,13 @@ class ChatRoom(Room):
         session.push("Following users are in the room:\r\n")
         for other in self.sessions:
             session.push(other.name+"\r\n")
+        session.push("\r\n")
     def do_who(self, session, line):
         #to see who are logged in
-        session.push("Following users are logged in:\r\n")
+        session.push("\nFollowing users are logged in:\r\n")
         for name in self.server.users:
             session.push(name+"\r\n")
+        session.push("\r\n")
 
 class LogoutRoom(Room):
     '''Room for a single user. Just removes the user's name from the server.'''

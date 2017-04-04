@@ -24,4 +24,4 @@ Currently, the code doesn't notify the users whether some user is already typing
 
 To add such a functionality, a function like `found_terminator()` of `ChatSession` class can be used to detect keystrokes from a session(i.e, a user). We shall soon add this functionality.
 
-Here's a [demo video for using the script](https://www.dropbox.com/s/qc16p5bleyewq3h/Demo.mp4?dl=0)
+Here's a [demo video for using the script.](https://www.dropbox.com/s/qc16p5bleyewq3h/Demo.mp4?dl=0)

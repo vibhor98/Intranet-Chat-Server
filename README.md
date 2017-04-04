@@ -7,13 +7,22 @@ To connect to the chat server, type `telnet <server-ip> <port num>` on the clien
 
 `
 MacBookPro:~ binaryBoy$ telnet 172.22.24.23 5005
+
 Trying 172.22.24.23...
+
 Connected to 172.22.24.23.
+
 Escape character is '^]'.
+
 Welcome to LNMChat!
+
 Type login <name> to enter the chat room.
+
 Type say <message> to send your message.
+
 Type "who" to see the users in your chat room.
+
 Type "look" to see the users logged into the entire chat server.
+
 Finally, use "logout" to exit from the server.
 `

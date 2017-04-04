@@ -14,8 +14,8 @@ Escape character is '^]'.<br />
 Welcome to LNMChat!<br />
 Type login <name> to enter the chat room.<br />
 Type say <message> to send your message.<br />
-Type "who" to see the users in your chat room.<br />  
-Type "look" to see the users logged into the entire chat server.<br />  
+Type "who" to see the users in your chat room.<br />
+Type "look" to see the users logged into the entire chat server.<br />
 Finally, use "logout" to exit from the server.<br />*
 
 Just like this client, other clients can also connect in the same way. Once multiple clients are connected, they can start chatting. 

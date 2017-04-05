@@ -18,7 +18,7 @@ Type "who" to see the users in your chat room.<br />
 Type "look" to see the users logged into the entire chat server.<br />
 Finally, use "logout" to exit from the server.<br />*
 
-Just like this client, other clients can also connect in the same way. Once multiple clients are connected, they can start chatting. 
+Just like this client, other clients can also connect in the same way. Once multiple clients are connected, they can start chatting. In the script, we've set the maximum number of clients as 5 (at line 155), but you can set it to any number of your preference.
 
 Currently, the code doesn't notify the users whether some user is already typing a message. So,  bit of patience and discipline is required from each user, to maintain the output clean.
 

@@ -16,7 +16,7 @@ Once the server starts running, clients can connect to it by using the ip addres
 
 We use `telnet` as a client interface to connect to the server. `telnet` comes installed in Unix-based systems. Windows users may require to install it before connecting to the server.
 
-DISCLOSURE: Telnet is not encrypted by default and this should not be used as a way to send secure and important messages. If you are using this on a public or private network your data can be visible to those with rights to collect and inspect your data. Please use caution.
+:warning: **DISCLOSURE** : Telnet is not encrypted by default and this should not be used as a way to send secure and important messages. If you are using this on a public or private network your data can be visible to those with rights to collect and inspect your data. Please use with caution.
 
 #### 2. Connect to the chat server on the client's terminal or command prompt.
 ```

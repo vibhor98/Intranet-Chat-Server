@@ -5,6 +5,8 @@ The port for server connection has been set to 5005. You can set it to anything,
 
 We use `telnet` as a client interface to connect to the server. `telnet` comes installed in Unix-based systems. Windows users may require to install it before connecting to the server.
 
+DISCLOSURE: Telnet is not encrypted by default and this should not be used as a way to send secure and important messages. If you are using this on a public or private network your data can be visible to those with rights to collect and inspect your data. Please use caution.
+
 To connect to the chat server, type `telnet <server-ip> <port num>` on the client's terminal or command prompt.  As mentioned before, the port number is set by default to 5005. The client can be any machine on the same network as that of the server. A suucessful connection would yield something like the following on the client:
 
 *MacBookPro:~ binaryBoy$ telnet 172.22.24.23 5005<br />

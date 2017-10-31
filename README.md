@@ -50,6 +50,7 @@ To add such a functionality, a function like `found_terminator()` of `ChatSessio
 
 ## Suggestions
 
+#### 1. Private Messages
 A command to send "private" messages on a chat room that in the other side show "PV from John Doe: 'message' "  , the command could looks like:
 
 ```

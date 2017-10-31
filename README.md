@@ -51,7 +51,8 @@ To add such a functionality, a function like `found_terminator()` of `ChatSessio
 ## Suggestions
 
 #### 1. Private Messages
-A command to send "private" messages on the chat room that shows "PV from <name>: <message>" on the other side. It can look like:
+A command to send "private" messages on the chat room that shows "PV from [name]: [message]" on the other side. It can look like:
 
 ```
-Type sayto <name>``` to send a private message to a specific user.
+Type sayto <name> to send a private message to a specific user.
+```

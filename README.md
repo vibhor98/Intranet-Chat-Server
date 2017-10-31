@@ -47,3 +47,12 @@ You can set it to any number of your preference, by changing [line 155](https://
 Currently, the code doesn't notify the users whether some user is already typing a message. So,  bit of patience and discipline is required from each user, to maintain the output clean.
 
 To add such a functionality, a function like `found_terminator()` of `ChatSession` class can be used to detect keystrokes from a session(i.e, a user). We shall soon add this functionality.
+
+## Suggestions
+
+A command to send "private" messages on a chat room that in the other side show "PV from John Doe: 'message' "  , the command could looks like:
+
+```
+Type sayto <name> to send a private message to a specific user
+  
+```

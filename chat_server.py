@@ -1,7 +1,6 @@
 from asyncore import dispatcher
 from asynchat import async_chat
 import socket, asyncore
-
 PORT = 5005
 NAME = "LNMChat"
 
@@ -12,6 +11,8 @@ class CommandHandler:
 
     def unknown(self, session, cmd):
         session.push('Unknown command: %s\r\n' % cmd)
+        
+    ''' handle is defined here'''
 
     def handle(self, session, line):
         if not line.strip():
